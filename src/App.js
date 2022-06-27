@@ -78,14 +78,18 @@ function App() {
         {projects.map((project) => {
           return (
             <article key={project.id} className="project">
-              <a href={project.url} target="_blank">
+              <a href={project.url} rel="noreferrer" target="_blank">
                 <img src={project.image} alt={project.title} />
               </a>
               <div className="project-content">
-                <a href={project.url} target="_blank">
+                <a href={project.url} rel="noreferrer" target="_blank">
                   <h3 className="project-title">{project.title}</h3>
                 </a>
-                <a href={project.github} className="github-url">
+                <a
+                  href={project.github}
+                  rel="noreferrer"
+                  className="github-url"
+                >
                   <FaGithub /> &nbsp; Repository Link
                 </a>
                 <p>{project.desc}</p>{" "}
