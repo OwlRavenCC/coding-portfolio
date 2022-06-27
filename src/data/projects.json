@@ -25,6 +25,24 @@
       "desc": "Hipster Ipsum React Text Generator using https://hipsum.co/ API and dark style css and animations.",
       "url": "https://astounding-speculoos-662e0f.netlify.app",
       "github": "https://github.com/OwlRavenCC/Hipster-Ipsum-React-Text-Generator",
+      "tags": ["ReactJS", "Javascript", "CSS", "hipsum API", "HTML"]
+    },
+    {
+      "id": 4,
+      "title": "Flat Design Review Slider",
+      "image": "./img/projects/Flat-Design-Review-Slider-preview.gif",
+      "desc": "Flat Design Review Slider using React Components and Hooks with CSS animations #reacticons",
+      "url": "https://celadon-froyo-2171a5.netlify.app",
+      "github": "https://github.com/OwlRavenCC/Flat-Design-Review-Slider",
+      "tags": ["ReactJS", "Javascript", "CSS", "HTML"]
+    },
+    {
+      "id": 5,
+      "title": "Restaurant Menu Filtering UI",
+      "image": "./img/projects/menu-filtering.gif",
+      "desc": "Dynamic Restaurant Menu Filtering UI using React Hooks",
+      "url": "https://sunny-jalebi-0583d3.netlify.app",
+      "github": "https://github.com/OwlRavenCC/restaurant-menu-filter",
       "tags": ["ReactJS", "Javascript", "CSS", "HTML"]
     }
   ]
