@@ -1,0 +1,261 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;700&family=Roboto:wght@400;500;700&display=swap");
+@font-face {
+  font-family: "a Theme for murder";
+  src: local("a Theme for murder"),
+    url("./fonts/a Theme for murder.woff") format("woff");
+  font-weight: bold;
+}
+
+/*
+=============== 
+Variables
+===============
+*/
+
+:root {
+  --background-clr: hsl(0deg 0% 11%);
+  --accent-clr: hsl(38, 92%, 55%);
+  --accent-clr-2: hsl(256deg 100% 66% / 80%);
+
+  --success-color: hsl(122deg 39% 49%);
+  --danger-color: hsla(0, 100%, 65%);
+
+  --title-headers-clr: hsl(0, 0%, 100%);
+  --main-text-clr: hsl(0, 0%, 64%);
+  --spacing: 0.1rem;
+
+  --max-width-desktop: 1200px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 125%;
+}
+
+body {
+  background: var(--background-clr);
+  color: var(--main-text-clr);
+  font-family: "Roboto", sans-serif;
+  font-size: 0.875rem;
+  overflow-x: hidden;
+}
+
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4 {
+  letter-spacing: var(--spacing);
+  text-transform: capitalize;
+  line-height: 1.25;
+  margin-bottom: 0.75rem;
+}
+h1 {
+  font-size: 2.5rem;
+}
+h2 {
+  font-size: 1.75rem;
+}
+h3 {
+  font-size: 1.25rem;
+}
+h4 {
+  font-size: 0.875rem;
+}
+p {
+  margin-bottom: 1.25rem;
+  color: var(--main-text-clr);
+  text-align: justify;
+  line-height: 2rem;
+}
+
+label {
+  letter-spacing: 0.1rem;
+}
+
+@media screen and (min-width: 800px) {
+  h1 {
+    font-size: 2.75rem;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+  h3 {
+    font-size: 1.75rem;
+  }
+  h4 {
+    font-size: 1rem;
+  }
+  body {
+    font-size: 1rem;
+  }
+  h1,
+  h2,
+  h3,
+  h4 {
+    line-height: 1;
+  }
+}
+
+main {
+  width: 100vw;
+  margin: 0 auto;
+  margin-top: 5rem;
+}
+
+section {
+  width: 95vw;
+  margin: 1rem auto;
+  max-width: var(--max-width-desktop);
+  margin-top: 1rem;
+  text-align: center;
+  padding: 0 1.5rem;
+}
+
+header {
+  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1rem;
+}
+
+.logo {
+  width: 200px;
+}
+
+.text-wrapper {
+  position: relative;
+  display: block;
+}
+
+.branding-heading {
+  color: var(--title-headers-clr);
+  letter-spacing: 0.1rem;
+  font-size: 1.25rem;
+  text-transform: lowercase;
+}
+
+@media screen and (max-width: 350px) {
+  .branding-heading {
+    font-size: 0.75rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .branding-heading {
+    letter-spacing: 0.35rem;
+    font-size: 3rem;
+  }
+}
+
+.coding-line {
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 3px;
+  background-color: #fff;
+  transform-origin: 0 50%;
+}
+
+.letter {
+  display: inline-block;
+}
+
+.letters .letter:nth-child(2),
+.letters .letter:nth-child(11) {
+  text-transform: uppercase;
+}
+
+.line1 {
+  top: 0;
+  left: 0;
+}
+
+#projects {
+  display: grid;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: start;
+  justify-items: center;
+  gap: 1.5rem;
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  #projects {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 992px) {
+  #projects {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.project {
+  border: 3px solid #2d2d2d;
+  transition: all 0.3s;
+  position: relative;
+  border-radius: 5px;
+}
+
+.project:hover {
+  transform: rotate(1deg) scale(1.03);
+  border-color: var(--accent-clr);
+}
+
+.project img {
+  width: 100%;
+}
+
+.project-content {
+  padding: 1rem;
+}
+
+.project-content p {
+  font-size: 0.75rem;
+  line-height: 1.5rem;
+}
+
+.project-title {
+  font-size: 1rem;
+  text-align: left;
+  line-height: 1.5rem;
+  color: var(--title-headers-clr);
+}
+
+.github-url {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  color: var(--accent-clr-2);
+  font-size: 0.75rem;
+  text-align: left;
+  margin-top: -0.25rem;
+  margin-bottom: 1rem;
+}
+
+cite {
+  font-size: 0.5em;
+  text-align: left;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  font-weight: bold;
+}

@@ -1,0 +1,31 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "title": "useReducer & useRef To Do List",
+      "image": "./img/projects/crud-react-app-usereducer-and-other-hooks.gif",
+      "desc": "CRUD To Do List using React #useReducer, #useRef, and #useState Hooks with minimalistic and smooth CSS Animations inspired in Material Design.",
+      "url": "https://vermillion-beignet-b329ad.netlify.app",
+      "github": "https://github.com/OwlRavenCC/usereducer-to-do-list",
+      "tags": ["ReactJS", "Javascript", "CSS", "HTML"]
+    },
+    {
+      "id": 2,
+      "title": "AJAX-PHP-Login",
+      "image": "./img/projects/login-ajax.gif",
+      "desc": "One file log in form app using #jQuery #PHP #AJAX, #AnimateCSS.",
+      "github": "https://github.com/OwlRavenCC/Ajax-PHP-Login",
+      "url": "https://projects.owlraven.com/ajax-php-login/index.php",
+      "tags": ["AJAX", "jQuery", "AnimateCSS", "PHP"]
+    },
+    {
+      "id": 3,
+      "title": "Hipster Ipsum React Text Generator",
+      "image": "./img/projects/hipster-lorem-ipsum-dark-theme-preview.gif",
+      "desc": "Hipster Ipsum React Text Generator using https://hipsum.co/ API and dark style css and animations.",
+      "url": "https://astounding-speculoos-662e0f.netlify.app",
+      "github": "https://github.com/OwlRavenCC/Hipster-Ipsum-React-Text-Generator",
+      "tags": ["ReactJS", "Javascript", "CSS", "HTML"]
+    }
+  ]
+}
